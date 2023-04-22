@@ -17,7 +17,7 @@ If we want to do mass spec targetting specific peptides, we will need to include
 - Tryspin will digest it into 4 smaller peptides: ALLAM - YTNQ**ANVGAG - HGLYKPE**QLQAI - EFN  
 - The peptide of interest is now in the two middle sequences, so we keep these, and delete the other sequences.
 
-I wrote this function for a project involving parallel reaction monitoring (PRM), which is a type of mass spectrometry that is targeted to peptides of specific masses.
+I wrote a function ```trypsin_flank``` for a project involving parallel reaction monitoring (PRM), which is a type of mass spectrometry that is targeted to peptides of specific masses.
 
 ### Use
 ```
