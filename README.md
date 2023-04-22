@@ -19,6 +19,12 @@ If we want to do mass spec targetting specific peptides, we will need to include
 
 I wrote this function for a project involving parallel reaction monitoring (PRM), which is a type of mass spectrometry that is targeted to peptides of specific masses.
 
+### Use
+```
+source ([raw url trypsin_flank.R])
+trypsin_flank (aa_df)
+```
+
 ### Input dataframe with the following variables: 
 - amino acid sequence of peptide of interest (*aa*), 
 - longer protein sequence containing the peptide of interest (*longer_seq*)
