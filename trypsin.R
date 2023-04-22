@@ -1,27 +1,9 @@
+####################### 
+#Function to pad a smaller peptide of interest by left and right flanking sequences till R, K, or end of longer peptide
+# Written by Rayan Najjar
+#######################
 
-
-
-
-
-
-
-
-
-out_dir='~/rna/nw/sle/results'
-
-aff2= readRDS(paste0(out_dir,'/epitopes_per_sample.rds'))
-
-
-
-# list of all unique epitopes
-uniq_aff= select (aff2,seq,aa) %>%
-  distinct () %>%
-  dplyr::rename (longer_seq=seq) 
-
-
-
-
-trypsin= function (aa_df) {
+trypsin_flank= function (aa_df) {
   df= data.frame(longer_seq=character(), aa=character(), r2r=character(), r2r_split=character())
   
   for (i in 1:nrow(aa_df)) {
@@ -43,7 +25,3 @@ trypsin= function (aa_df) {
   }
   return (df)
 }
-
-
-tt= trypsin(uniq_aff) 
-
