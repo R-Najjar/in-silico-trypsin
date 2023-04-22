@@ -21,7 +21,7 @@ I wrote a function ```trypsin_flank``` for a project involving parallel reaction
 
 ### Use
 ```
-source ([raw url trypsin_flank.R])
+source ([raw url trypsin.R])
 trypsin_flank (aa_df)
 ```
 
